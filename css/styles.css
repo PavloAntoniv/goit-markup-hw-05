@@ -91,17 +91,27 @@ ul {
 }
 
 .studio {
+  position: relative;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
 }
+/* 
+.studio-after {
+  display: flex;
+}
+.studio-after::after {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--background-color);
+}
 
 .studio:hover,
 .studio:focus {
   color: var(--background-color);
-}
+} */
 
 .portfolio {
   font-weight: 500;
@@ -352,6 +362,9 @@ ul {
 
 /* Work  */
 .work-box {
+  position: relative;
+  width: 370px;
+  height: 294px;
   background-color: var(--title-text-color);
 }
 
@@ -363,6 +376,28 @@ ul {
   display: flex;
   gap: 30px;
   margin-top: 50px;
+}
+.article-work-container {
+  position: absolute;
+  display: flex;
+  width: 370px;
+  height: 70px;
+  bottom: 0%;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%);
+  background: rgba(47, 48, 58, 0.8);
+}
+.article-computer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+  /* margin: 27px 107px; */
 }
 
 .team-section {
