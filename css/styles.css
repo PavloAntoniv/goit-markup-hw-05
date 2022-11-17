@@ -845,7 +845,8 @@ ul {
   padding-right: 24px;
 }
 
-.projects-box:hover .overlay-projects-action {
+.projects-box:hover .overlay-projects-action,
+.projects-box:focus .overlay-projects-action {
   transform: translateY(0);
   opacity: 1;
 }
